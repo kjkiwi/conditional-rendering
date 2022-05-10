@@ -8,11 +8,11 @@ var isLoggedIn = false;
 const currentTime = new Date().getHours();
 console.log(currentTime);
 
-//ternary operator when you only want an action if condition is truthy, and no action if condition is falsy
+//AND operator when you only want an action if condition is truthy, and no action if condition is falsy
 function App() {
   return (
     <div className="container">
-      {currentTime < 12 ? <h1> Time for lunch </h1> : null}
+      {currentTime < 12 && <h1> Time for lunch </h1>}
       {/* {isLoggedIn ? <h1>Hello</h1> : <Login />}{" "} */}
     </div>
   );
