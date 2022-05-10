@@ -1,8 +1,12 @@
 import React from "react";
-import { render } from "react-dom";
+
 import Login from "./Login";
 //to change screen shown depending on Login status
 var isLoggedIn = false;
+
+//function to get current time
+const currentTime = new Date().getHours();
+console.log(currentTime);
 
 //renderConditionally() converted to expression so it can be passed inline to App()
 function App() {
